@@ -16,4 +16,4 @@ classes: wide
 | Secretary      | Andy Turner    | EPCC, University of Edinburgh    |
 | Communications | Chris Collins  | University of Hull               |
 
-More information on the roles of the HPC-SIG committee can be found at [/HPC-SIG/hpcsig-ToR/](HPC-SIG Terms of Reference)
+More information on the roles of the HPC-SIG committee can be found at [HPC-SIG Terms of Reference](/HPC-SIG/hpcsig-ToR/)
