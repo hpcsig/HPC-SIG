@@ -1,9 +1,23 @@
 main:
-  - title: "Posts"
-    url: /posts/
-  - title: "Categories"
-    url: /categories/
-  - title: "Tags"
-    url: /tags/
   - title: "About"
     url: /about/
+  - title: "Events"
+    url: /eventlist/
+#  - title: "Calendar"
+#    url: /calendar/
+  - title: "Vacancies"
+    url: /vacancylist/
+
+hpcsig:
+  - title: About the HPC-SIG
+    children: 
+      - title: "Purpose"
+        url: /hpcsig-purpose/
+      - title: "Becoming a member"
+        url: /hpcsig-member/
+      - title: "Why join the HPC-SIG"
+        url: /hpcsig-whyjoin/
+      - title: "Committee"
+        url: /hpcsig-committee/
+      - title: "Terms of Reference"
+        url: /hpcsig-ToR/

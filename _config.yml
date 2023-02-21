@@ -13,21 +13,19 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: MM
+title: HPC-SIG
 email:
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-twitter_username: username
-github_username: username
+ The UK Academic High Performance Computing Special Interest Group
+#twitter_username: username
+#github_username: username
 minimal_mistakes_skin: default
 search: true
 
 # Build settings
 markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
-# Outputting
+# Outputting 
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
@@ -58,34 +56,43 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name   : "First Lastname"
-  avatar : "/assets/images/bio-photo.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
+  name   : "HPC-SIG"
+#  avatar : "/assets/images/bio-photo.jpg"
+  bio    : "The UK Academic High Performance Computing Special Interest Group"
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      url: "https://"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      url: "https://hpcsig.github.io/HPC-SIG"
+#    - label: "Twitter"
+#      icon: "fab fa-fw fa-twitter-square"
+#      url: "https://twitter.com/"
+#    - label: "GitHub"
+#      icon: "fab fa-fw fa-github"
+#      url: "https://github.com/"
+#    - label: "Instagram"
+#      icon: "fab fa-fw fa-instagram"
+#      url: "https://instagram.com/"
 
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+#    - label: "Twitter"
+#      icon: "fab fa-fw fa-twitter-square"
+#      url: "https://twitter.com/"
+#    - label: "GitHub"
+#      icon: "fab fa-fw fa-github"
+#      url: "https://github.com/"
+    - label: "Slack"
+      url: "https://hpc-sig.slack.com"
+      icon: "fab fa-slack"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://hpcsig.github.io/HPC-SIG"
+    - label: "Email"
+      icon: "fas fa-envelope"
+      url: "mailto:HPC-SIG-ENQUIRIES@JISCMAIL.AC.UK?subject=Mail from our Website"
+#    - label: "Instagram"
+#      icon: "fab fa-fw fa-instagram"
+#      url: "https://instagram.com/"
 
 defaults:
   # _posts
@@ -107,9 +114,25 @@ defaults:
       layout: single
       author_profile: true
 
+
 category_archive:
   type: liquid
   path: /categories/
 tag_archive:
   type: liquid
   path: /tags/
+
+collections:
+  events:
+    output: true
+    permalink: /events/:path/
+    title: Events
+  vacancies:
+    output: true
+    permalink: /vacancies/:path/
+    title: Vacancies
+
+future: true
+
+atom_feed:
+  hide: true
